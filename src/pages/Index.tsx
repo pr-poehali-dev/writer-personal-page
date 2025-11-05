@@ -75,7 +75,7 @@ const Index = () => {
       <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-purple-100">
         <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
           <h1 className="text-2xl font-montserrat font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            Анна Литвинова
+            Юлия Щёлокова
           </h1>
           <div className="flex gap-6">
             <a href="#about" className="text-gray-700 hover:text-primary transition-colors">О себе</a>
@@ -118,7 +118,7 @@ const Index = () => {
             <div className="absolute -inset-4 bg-gradient-to-r from-primary to-secondary rounded-3xl blur-2xl opacity-30"></div>
             <img 
               src="https://cdn.poehali.dev/projects/599ffdd3-a1b5-4468-8d74-2c7be1e02288/files/274d349d-5166-46a3-87b1-462dfc141bf3.jpg" 
-              alt="Анна Литвинова" 
+              alt="Юлия Щёлокова" 
               className="relative rounded-3xl shadow-2xl w-full object-cover aspect-[3/4]"
             />
           </div>
@@ -318,7 +318,7 @@ const Index = () => {
           </div>
           <div className="border-t border-gray-700 pt-8">
             <p className="text-gray-400">
-              © 2024 Анна Литвинова. Все права защищены.
+              © 2024 Юлия Щёлокова. Все права защищены.
             </p>
           </div>
         </div>

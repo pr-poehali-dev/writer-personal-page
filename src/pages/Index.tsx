@@ -71,18 +71,18 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50 font-open-sans">
-      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-purple-100">
+    <div className="min-h-screen bg-gradient-to-br from-cyan-500 via-blue-500 to-blue-600 font-open-sans">
+      <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-cyan-200 shadow-lg">
         <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
           <h1 className="text-2xl font-montserrat font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
             Юлия Щёлокова
           </h1>
           <div className="flex gap-6">
-            <a href="#about" className="text-gray-700 hover:text-primary transition-colors">О себе</a>
-            <a href="#books" className="text-gray-700 hover:text-primary transition-colors">Книги</a>
-            <a href="#stories" className="text-gray-700 hover:text-primary transition-colors">Рассказы</a>
-            <a href="#subscribe" className="text-gray-700 hover:text-primary transition-colors">Подписка</a>
-            <a href="#contact" className="text-gray-700 hover:text-primary transition-colors">Контакты</a>
+            <a href="#about" className="text-gray-800 hover:text-primary transition-colors font-medium">О себе</a>
+            <a href="#books" className="text-gray-800 hover:text-primary transition-colors font-medium">Книги</a>
+            <a href="#stories" className="text-gray-800 hover:text-primary transition-colors font-medium">Рассказы</a>
+            <a href="#subscribe" className="text-gray-800 hover:text-primary transition-colors font-medium">Подписка</a>
+            <a href="#contact" className="text-gray-800 hover:text-primary transition-colors font-medium">Контакты</a>
           </div>
         </nav>
       </header>
@@ -93,13 +93,13 @@ const Index = () => {
             <Badge className="bg-gradient-to-r from-primary to-secondary text-white border-0">
               Писательница
             </Badge>
-            <h2 className="text-5xl md:text-6xl font-montserrat font-bold leading-tight">
+            <h2 className="text-5xl md:text-6xl font-montserrat font-bold leading-tight text-white drop-shadow-lg">
               Создаю миры, <br />
-              <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-white to-accent bg-clip-text text-transparent">
                 в которых хочется жить
               </span>
             </h2>
-            <p className="text-xl text-gray-600 leading-relaxed">
+            <p className="text-xl text-white/90 leading-relaxed drop-shadow">
               Пишу о том, что волнует душу. Мои истории — это путешествия в глубины человеческих эмоций, 
               фантазии и реальности, переплетённые в одно целое.
             </p>
@@ -125,40 +125,42 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="about" className="py-20 bg-white/60 backdrop-blur-sm">
-        <div className="container mx-auto px-4">
+      <section id="about" className="py-20 bg-cover bg-center bg-no-repeat relative" style={{backgroundImage: 'url(https://cdn.poehali.dev/projects/599ffdd3-a1b5-4468-8d74-2c7be1e02288/files/d35301b9-f183-4e8c-8cfd-58a9010c1360.jpg)'}}>
+        <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-6">
-            <h3 className="text-4xl md:text-5xl font-montserrat font-bold mb-8">
+            <h3 className="text-4xl md:text-5xl font-montserrat font-bold mb-8 text-white drop-shadow-lg">
               Обо мне
             </h3>
-            <p className="text-lg text-gray-700 leading-relaxed">Я начала писать сказки сразу, как научилась выводить буквы в слова , как пошла в первый класс. Но это увлечение пришлось не по душе взрослым. Так что на долгие годы желание писать тлело где то внутри меня. Но все же нашло свой путь к свету. 
+            <p className="text-lg text-white/95 leading-relaxed drop-shadow">Я начала писать сказки сразу, как научилась выводить буквы в слова , как пошла в первый класс. Но это увлечение пришлось не по душе взрослым. Так что на долгие годы желание писать тлело где то внутри меня. Но все же нашло свой путь к свету. 
 Моя цель - не просто рассказать историю, а создать эмоциональный опыт, показать путь выхода из кризиса, который останется с читателем навсегда.</p>
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-white/95 leading-relaxed drop-shadow">
               За моими плечами 7 опубликованных книг, более 50 рассказов и тысячи читателей по всему миру. 
               Я верю, что литература способна менять жизни, и каждая моя работа — это частичка моей души, 
               которой я делюсь с вами.
             </p>
             <div className="flex justify-center gap-8 pt-8">
               <div className="text-center">
-                <div className="text-4xl font-montserrat font-bold text-primary">7</div>
-                <div className="text-gray-600 mt-2">Книг</div>
+                <div className="text-4xl font-montserrat font-bold text-white drop-shadow-lg">7</div>
+                <div className="text-white/90 mt-2 drop-shadow">Книг</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-montserrat font-bold text-secondary">50+</div>
-                <div className="text-gray-600 mt-2">Рассказов</div>
+                <div className="text-4xl font-montserrat font-bold text-white drop-shadow-lg">50+</div>
+                <div className="text-white/90 mt-2 drop-shadow">Рассказов</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-montserrat font-bold text-accent">10k+</div>
-                <div className="text-gray-600 mt-2">Читателей</div>
+                <div className="text-4xl font-montserrat font-bold text-white drop-shadow-lg">10k+</div>
+                <div className="text-white/90 mt-2 drop-shadow">Читателей</div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="books" className="py-20">
-        <div className="container mx-auto px-4">
-          <h3 className="text-4xl md:text-5xl font-montserrat font-bold text-center mb-12">
+      <section id="books" className="py-20 bg-cover bg-center bg-no-repeat relative" style={{backgroundImage: 'url(https://cdn.poehali.dev/projects/599ffdd3-a1b5-4468-8d74-2c7be1e02288/files/a1818107-37a4-4784-8a28-8b914edcb014.jpg)'}}>
+        <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <h3 className="text-4xl md:text-5xl font-montserrat font-bold text-center mb-12 text-white drop-shadow-lg">
             Мои книги
           </h3>
           <div className="grid md:grid-cols-3 gap-8">
@@ -191,9 +193,10 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="stories" className="py-20 bg-gradient-to-br from-purple-100 to-pink-100">
-        <div className="container mx-auto px-4">
-          <h3 className="text-4xl md:text-5xl font-montserrat font-bold text-center mb-12">
+      <section id="stories" className="py-20 bg-cover bg-center bg-no-repeat relative" style={{backgroundImage: 'url(https://cdn.poehali.dev/projects/599ffdd3-a1b5-4468-8d74-2c7be1e02288/files/712d8960-dcc3-4461-81bc-b46a3fc0bdc4.jpg)'}}>
+        <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <h3 className="text-4xl md:text-5xl font-montserrat font-bold text-center mb-12 text-white drop-shadow-lg">
             Рассказы
           </h3>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -218,14 +221,14 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="reviews" className="py-20">
+      <section id="reviews" className="py-20 bg-gradient-to-br from-cyan-500 via-blue-500 to-blue-600">
         <div className="container mx-auto px-4">
-          <h3 className="text-4xl md:text-5xl font-montserrat font-bold text-center mb-12">
+          <h3 className="text-4xl md:text-5xl font-montserrat font-bold text-center mb-12 text-white drop-shadow-lg">
             Отзывы читателей
           </h3>
           <div className="grid md:grid-cols-3 gap-8">
             {reviews.map((review, index) => (
-              <Card key={index} className="border-0 bg-gradient-to-br from-white to-purple-50 shadow-lg">
+              <Card key={index} className="border-0 bg-white/90 backdrop-blur-sm shadow-lg">
                 <CardHeader>
                   <div className="flex gap-1 mb-2">
                     {[...Array(review.rating)].map((_, i) => (
